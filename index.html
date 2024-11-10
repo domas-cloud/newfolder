@@ -5,137 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Braškių pasaulis</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-        
-        :root {
-            --primary-color: #ff3366;
-            --secondary-color: #1a0f0f;
-            --background-color: #2b1a1a;
-            --text-color: #ffffff;
-        }
-
-        body, html {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: var(--text-color);
-            background-color: var(--background-color);
-            line-height: 1.6;
-        }
-
-        .nav-bar {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: var(--secondary-color);
-            padding: 15px 5%;
-        }
-
-        .nav-logo {
-            margin-bottom: 10px;
-        }
-
-        .nav-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .nav-bar a {
-            color: var(--text-color);
-            text-decoration: none;
-            margin: 5px 15px;
-            font-weight: 600;
-        }
-
-        .nav-bar a:hover {
-            color: var(--primary-color);
-        }
-
-        .section {
-            padding: 30px 5%;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .hero {
-            background-image: url('images/strawberries.jpg');
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .features {
-            background-color: var(--secondary-color);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            text-align: center;
-        }
-
-        .feature-item {
-            flex: 1 1 200px;
-            padding: 20px;
-            margin: 10px;
-        }
-
-        .feature-item i {
-            font-size: 2rem;
-            color: var(--primary-color);
-        }
-
-        .about {
-            background-color: var(--background-color);
-            text-align: center;
-        }
-
-        .about p {
-            max-width: 800px;
-            margin: 20px auto;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #e61a4d;
-        }
-
-        @media (min-width: 768px) {
-            .nav-bar {
-                flex-direction: row;
-                justify-content: space-between;
-            }
-
-            .nav-logo {
-                margin-bottom: 0;
-            }
-
-            .hero h1 {
-                font-size: 4rem;
-            }
-
-            .hero {
-                height: 80vh;
-            }
-        }
+        /* Your CSS styles here */
     </style>
 </head>
 <body>
+    <!-- Your existing HTML content here -->
+
     <nav class="nav-bar">
         <div class="nav-logo">
             <a href="index.html">Braškių pasaulis</a>
@@ -151,58 +26,33 @@
     </div>
 
     <div class="features section">
-        <div class="feature-item">
-            <i>🍓</i>
-            <h3>Šviežios braškės</h3>
-            <p>Kasdienis šviežių braškių pristatymas</p>
-        </div>
-        <div class="feature-item">
-            <i>🌱</i>
-            <h3>Ekologiška auginimas</h3>
-            <p>Auginame braškes be chemikalų</p>
-        </div>
-        <div class="feature-item">
-            <i>👨‍🌾</i>
-            <h3>Ekspertų patarimai</h3>
-            <p>Profesionalių augintojų konsultacijos</p>
-        </div>
-        <div class="feature-item">
-            <i>🥧</i>
-            <h3>Receptai</h3>
-            <p>Įdomūs receptai su braškėmis</p>
-        </div>
+        <!-- Feature items here -->
     </div>
 
     <div class="about section">
-        <h2>Sveikos braškės, sveikas kūnas</h2>
-        <p>Mūsų misija - aprūpinti jus skaniausiomis ir sveikiausiomis braškėmis. Nuo lauko iki jūsų stalo, mes rūpinamės kiekvienu auginimo etapu, užtikrindami aukščiausią kokybę ir skonio malonumą.</p>
-        <a href="#" class="button">Sužinoti daugiau</a>
+        <!-- About content here -->
     </div>
-    
-    <!-- Pokalbių widget'o skriptas -->
-    <script type="text/javascript"> 
-        (function(d, t) {
-            var v = d.createElement(t),
-                s = d.getElementsByTagName(t)[0];
-            v.onload = function () {
-                if (!document.getElementById('root')) {
-                    var root = d.createElement('div');
-                    root.id = 'root';
-                    d.body.appendChild(root);
-                }  
-                if (window.myChatWidget &&
-                    typeof window.myChatWidget.load === 'function') { 
-                    window.myChatWidget.load({ 
-                        assistantId: 'afc3c5c1-60d8-44f1-be53-7f0d7aa75c27',
-                        apiKey: '73be0b1f-e4c1-46bd-80e6-9f00c9be0dab',
-                    });
-                }
-            }; 
-            v.src = "https://agentivehub.com/production.bundle.min.js";
-            v.type = "text/javascript";
-            s.parentNode.insertBefore(v, s);
-        })(document, 'script');
+
+    <!-- New chatbot widget code -->
+    <div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
+        <!-- Here is where TIXAE Agents renders the widget. -->
+    </div>
+
+    <script defer>
+        (function() {
+            window.VG_CONFIG = {
+                ID: "fuu63tnry0gqetph", // YOUR AGENT ID
+                region: 'eu', // YOUR ACCOUNT REGION
+                render: 'bottom-right', // Render options: 'full-width', 'bottom-left', 'bottom-right'
+                stylesheets: [
+                    "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
+                ],
+            };
+            var VG_SCRIPT = document.createElement("script");
+            VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+            VG_SCRIPT.defer = true;
+            document.body.appendChild(VG_SCRIPT);
+        })()
     </script>
-    
 </body>
 </html>
