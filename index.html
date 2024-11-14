@@ -32,27 +32,20 @@
     <div class="about section">
         <!-- About content here -->
     </div>
-
-    <!-- New chatbot widget code -->
-    <div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
-        <!-- Here is where TIXAE Agents renders the widget. -->
-    </div>
-
-    <script defer>
-        (function() {
-            window.VG_CONFIG = {
-                ID: "fuu63tnry0gqetph", // YOUR AGENT ID
-                region: 'eu', // YOUR ACCOUNT REGION
-                render: 'bottom-right', // Render options: 'full-width', 'bottom-left', 'bottom-right'
-                stylesheets: [
-                    "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
-                ],
-            };
-            var VG_SCRIPT = document.createElement("script");
-            VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
-            VG_SCRIPT.defer = true;
-            document.body.appendChild(VG_SCRIPT);
-        })()
-    </script>
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '672f6af2905199c9a7d48f55' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+   
+   
 </body>
 </html>
