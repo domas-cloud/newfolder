@@ -9,9 +9,6 @@
 - [Robot Control Architecture](#robot-control-architecture)
 - [Electronics Wiring Diagram](#electronics-wiring-diagram)
 - [Ideas and Principles](#ideas-and-principles)
-- [Video](#video)
-- [Code](#code)
-- [3D models](#3d-models)
 
 WRO Future Engineers documentation 
 Team Name: KU STEAM TP-40 
