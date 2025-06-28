@@ -21,7 +21,7 @@ To build a reliable and fully autonomous robot capable of navigating real-world 
 - **Marius** – Programmer
 - **Domas** – Electronics Specialist
 - **Jonas** – Mechanical Designer
-- 
+  
 By combining our individual strengths, responsibilities, and teamwork, we were able to design, build, and refine a reliable autonomous car ready for competition. 
 Our Goal: 
  To create an autonomous, environment-aware robot that can move and make decisions independently, efficiently avoiding obstacles in real time.
